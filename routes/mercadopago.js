@@ -6,7 +6,7 @@ var mercadopago = require('mercadopago');
 var app = express();
 
 // Funcion Get Mercado para para obtener el link de pago 
-app.get('/:access_token', (req, res) => {
+app.post('/:access_token', (req, res) => {
 
     var token = req.params.access_token;
     var body = req.body;

@@ -55,7 +55,7 @@ app.post('/',(req, res) => {
 
 
 // Funcion para la autenticacion del usuario
-app.get('/login',(req, res) => {
+app.post('/login',(req, res) => {
 
     var body = req.body;
 
